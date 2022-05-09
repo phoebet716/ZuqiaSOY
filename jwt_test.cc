@@ -24,7 +24,6 @@ TEST(JwtTest, JwtValidate)
     char *         token            = NULL;
     char           b_token[1024]    = { 0 };
     unsigned char  public_key[4096] = { 0 };
-    size_t         pub_key_len      = 0;
 
     EXPECT_EQ(0, neu_jwt_init((char *) "./config"));
     EXPECT_EQ(0, neu_jwt_new(&token));
